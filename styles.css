@@ -143,6 +143,11 @@ section { padding: 76px 0; }
 .product { display: grid; grid-template-columns: 380px 1fr; gap: 44px; align-items: start; padding: 40px 0; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
 .product .ph { aspect-ratio: 1; border-radius: var(--radius); overflow: hidden; background: var(--sand); }
 .product .ph img { width: 100%; height: 100%; object-fit: cover; }
+.gallery .thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+.thumbs button { padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); cursor: pointer; aspect-ratio: 1; }
+.thumbs button:hover { border-color: var(--muted); }
+.thumbs button.on { border-color: var(--forest); box-shadow: 0 0 0 1px var(--forest); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; }
 .product h3 { font-size: 1.7rem; }
 .product .why { color: var(--muted); }
 .product .how { background: var(--sand); border-radius: 10px; padding: 14px 18px; margin: 16px 0; font-size: .95rem; }
